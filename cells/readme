@@ -1,0 +1,6 @@
+
+* all different cells should be placed in this folder.
+* every thing can be divided and made as individual cells and they 
+  should be updated in db as shown for article cell
+* all cells should have a file.php and all other required js or css
+  must be called within.

@@ -1,0 +1,37 @@
+
+--
+-- Database: `csdept`
+--
+
+INSERT INTO `page` (`pid`, `name`, `title`, `theme`) VALUES
+(1, 'home', 'HOME', 'default' ),
+(2, 'academics', 'ACADEMICS', 'default'),
+(3, 'library', 'library', 'default'),
+(4, 'students', 'students', 'default'),
+(5, 'about', 'about us', 'default')
+;
+
+INSERT INTO `main_nav` (`page`, `name`, `link`, `weight`) VALUES
+('home', 'Home', 'home', 0 ),
+('home', 'Academics', 'academics', 1 ),
+('home', 'Library', 'library', 2 ),
+('home', 'Students', 'students', 3 ),
+('home', 'About us', 'about', 4 ),
+('academics', 'Home', 'home', 0 ),
+('academics', 'Academics', 'academics', 1 ),
+('academics', 'Library', 'library', 2 ),
+('academics', 'Students', 'students', 3 ),
+('academics', 'About us', 'about', 4 ),
+('library', 'Home', 'home', 4 ),
+('library', 'Academics', 'library', 1 ),
+('library', 'Library', 'library', 2 ),
+('library', 'Students', 'students', 3 ),
+('library', 'About us', 'about', 0 )
+;
+
+INSERT INTO `cells` (`page`, `name`, `weight`) VALUES
+('home','article',0);
+
+
+INSERT INTO `article` (`page`, `article_title`, `article_content`,`weight`) VALUES
+('home','College Details','blah blah',0);
